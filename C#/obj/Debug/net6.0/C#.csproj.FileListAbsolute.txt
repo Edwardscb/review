@@ -1,0 +1,15 @@
+/home/zeto/review/C#/bin/Debug/net6.0/C#
+/home/zeto/review/C#/bin/Debug/net6.0/C#.deps.json
+/home/zeto/review/C#/bin/Debug/net6.0/C#.runtimeconfig.json
+/home/zeto/review/C#/bin/Debug/net6.0/C#.dll
+/home/zeto/review/C#/bin/Debug/net6.0/C#.pdb
+/home/zeto/review/C#/obj/Debug/net6.0/C#.csproj.AssemblyReference.cache
+/home/zeto/review/C#/obj/Debug/net6.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/home/zeto/review/C#/obj/Debug/net6.0/C#.AssemblyInfoInputs.cache
+/home/zeto/review/C#/obj/Debug/net6.0/C#.AssemblyInfo.cs
+/home/zeto/review/C#/obj/Debug/net6.0/C#.csproj.CoreCompileInputs.cache
+/home/zeto/review/C#/obj/Debug/net6.0/C#.dll
+/home/zeto/review/C#/obj/Debug/net6.0/refint/C#.dll
+/home/zeto/review/C#/obj/Debug/net6.0/C#.pdb
+/home/zeto/review/C#/obj/Debug/net6.0/C#.genruntimeconfig.cache
+/home/zeto/review/C#/obj/Debug/net6.0/ref/C#.dll
