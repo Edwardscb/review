@@ -13,6 +13,17 @@ let idCounter = 0;
 // send this to localStorage with "todos" as its key
 let storageItems = [];
 
+// event listener for when you click a button - ensures that a button element was actually clicked first
+// if it was clicked, then it removes the to-do item from the DOM and then removes it from localStorage as well
+todoList.addEventListener("click", (evt) => {
+    if (evt.target.tagName === "BUTTON") {
+    // kind of a stupid way to go about it, but oh well....
+    evt.target.parentElement.parentElement.removeChild(evt.target.parentElement);
+    storageItems = (storageItems.filter((x) => x.id != evt.target.id));
+    addToLocalStorage();
+    }
+    })
+
 todoForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
     addItem(textInput.value);
@@ -28,6 +39,7 @@ const onStart = () => {
     }
 }
 
+// increases the idCounter by one
 const getId = () => {
     idCounter++;
     return idCounter;
@@ -37,6 +49,10 @@ const getId = () => {
 // updates localStorage with whatever is in storageItems array
 const addToLocalStorage = () => {
     localStorage.setItem("todos", JSON.stringify(storageItems));
+}
+
+const remove = (idnum) => {
+    console.log(idnum)
 }
 
 // add an item to the to-do list
@@ -57,6 +73,7 @@ const addItem = (todo) => {
     newLi.appendChild(newButton);
     // add item to storage array so I can add it to localStorage
     storageItems.push({"id": newLi.id, "content": todo})
+    addToLocalStorage();
 }
 
 onStart();
